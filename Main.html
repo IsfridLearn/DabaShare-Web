@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DabaShare – Learn Together, Grow Together</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE: LOGIN
+════════════════════════════════════════════════════════ -->
+<div id="page-login" class="page active">
+  <div class="login-bg">
+    <div class="login-blob b1"></div>
+    <div class="login-blob b2"></div>
+  </div>
+
+  <header class="login-header">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M4 22 L16 10 L28 22" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="8" y="22" width="16" height="4" rx="2" fill="#2563EB" opacity="0.3"/>
+        <circle cx="16" cy="10" r="3" fill="#2563EB"/>
+      </svg>
+      <span>DabaShare</span>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <div class="login-left">
+      <h1>Learn Together,<br/>Grow Together</h1>
+      <p class="tagline">Connect with students across Davao City universities. Exchange skills, find tutors, and build a collaborative learning community.</p>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feat-icon blue">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <strong>Smart Matching</strong>
+            <p>Our algorithm connects you with students who can teach what you need and learn what you offer.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feat-icon purple">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <strong>Free &amp; Paid Options</strong>
+            <p>Browse courses offered for free or with a small fee to support fellow students.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feat-icon green">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <strong>Cross-University Network</strong>
+            <p>Connect with students from UM, AdDU, UP Mindanao, and more universities in Davao.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-card">
+      <h2>Welcome Back</h2>
+      <p class="card-sub">Sign in to continue your learning journey</p>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="login-email" placeholder="you@university.edu"/>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="••••••••"/>
+      </div>
+      <div id="login-error" class="login-error hidden">Please enter email and password.</div>
+      <button id="btn-login" type="button" class="btn-primary">Sign In <span>→</span></button>
+      <p class="signup-link">Don't have an account? <a href="#" id="link-show-signup">Sign up</a></p>
+      <p class="demo-note"><strong>Demo:</strong> Use any email and password to try it out</p>
+    </div>
+  </main>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE: SIGN UP
+════════════════════════════════════════════════════════ -->
+<div id="page-signup" class="page">
+  <div class="login-bg">
+    <div class="login-blob b1"></div>
+    <div class="login-blob b2"></div>
+  </div>
+  <header class="login-header">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M4 22 L16 10 L28 22" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="8" y="22" width="16" height="4" rx="2" fill="#2563EB" opacity="0.3"/>
+        <circle cx="16" cy="10" r="3" fill="#2563EB"/>
+      </svg>
+      <span>DabaShare</span>
+    </div>
+  </header>
+  <main class="login-main">
+    <div class="login-left">
+      <h1>Join the<br/>Community</h1>
+      <p class="tagline">Create your account and start exchanging knowledge with Davao City's brightest students today.</p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feat-icon blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.38 2 2 0 0 1 3.54 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.29 6.29l1.02-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><strong>Get Matched Instantly</strong><p>Set up your profile once and our algorithm finds the perfect study partners for you.</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="feat-icon purple"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <div><strong>Host or Join Webinars</strong><p>Create live study sessions, host webinars, or join group video conferences with classmates.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="login-card">
+      <h2>Create Account</h2>
+      <p class="card-sub">Join thousands of Davao students</p>
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" placeholder="Juan"/></div>
+        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Dela Cruz"/></div>
+      </div>
+      <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@university.edu"/></div>
+      <div class="form-group">
+        <label>University</label>
+        <select>
+          <option value="">Select your university</option>
+          <option>University of Mindanao (UM)</option>
+          <option>Ateneo de Davao University (AdDU)</option>
+          <option>UP Mindanao</option>
+          <option>Holy Cross of Davao</option>
+          <option>San Pedro College</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Password</label><input type="password" placeholder="••••••••"/></div>
+      <button id="btn-signup" type="button" class="btn-primary">Create Account <span>→</span></button>
+      <p class="signup-link">Already have an account? <a href="#" id="link-show-login">Sign in</a></p>
+    </div>
+  </main>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE: DASHBOARD (Courses)
+════════════════════════════════════════════════════════ -->
+<div id="page-dashboard" class="page">
+  <nav class="main-nav">
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+        <path d="M4 22 L16 10 L28 22" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="8" y="22" width="16" height="4" rx="2" fill="#2563EB" opacity="0.3"/>
+        <circle cx="16" cy="10" r="3" fill="#2563EB"/>
+      </svg>
+      <span>DabaShare</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="nav-link active">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Courses
+      </a>
+      <a href="#" class="nav-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        Profile & Match
+      </a>
+      <a href="#" class="nav-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        Webinars
+      </a>
+      <a href="#" class="nav-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Messages
+      </a>
+    </div>
+    <div class="nav-right">
+      <div class="user-chip">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span class="nav-username">User</span>
+      </div>
+      <button class="btn-logout">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Logout
+      </button>
+    </div>
+  </nav>
+
+  <div class="hero-banner">
+    <div class="hero-content">
+      <h2>Browse Available Courses</h2>
+      <p>Discover skills shared by students across Davao City universities</p>
+      <button id="btn-go-profile" type="button" class="btn-outline-white">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        Setup Your Profile &amp; Get Matched
+      </button>
+    </div>
+  </div>
+
+  <div class="dashboard-body">
+    <div class="filter-bar">
+      <div class="search-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="course-search" placeholder="Search for courses or tutors..." />
+      </div>
+      <div class="filter-pills">
+        <button class="pill active" type="button" data-price-filter="all">All</button>
+        <button class="pill" type="button" data-price-filter="free">Free</button>
+        <button class="pill" type="button" data-price-filter="paid">Paid</button>
+      </div>
+      <select id="uni-filter">
+        <option value="all">All Universities</option>
+        <option value="UM">UM</option>
+        <option value="AdDU">AdDU</option>
+        <option value="UP Mindanao">UP Mindanao</option>
+        <option value="Holy Cross">Holy Cross</option>
+      </select>
+    </div>
+
+    <p class="showing-count" id="showing-count">Showing 23 courses</p>
+
+    <div class="course-grid" id="course-grid"></div>
+
+    <div class="post-course-cta">
+      <div>
+        <h3>Have something to teach?</h3>
+        <p>Share your knowledge and help fellow Davao students grow.</p>
+      </div>
+      <button id="btn-open-post" type="button" class="btn-primary">+ Post a Course</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE: PROFILE & MATCHING
+════════════════════════════════════════════════════════ -->
+<div id="page-profile" class="page">
+  <nav class="main-nav">
+    <div class="logo"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M4 22 L16 10 L28 22" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="22" width="16" height="4" rx="2" fill="#2563EB" opacity="0.3"/><circle cx="16" cy="10" r="3" fill="#2563EB"/></svg><span>DabaShare</span></div>
+    <div class="nav-links">
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Courses</a>
+      <a href="#" class="nav-link active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>Profile & Match</a>
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>Webinars</a>
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Messages</a>
+    </div>
+    <div class="nav-right">
+      <div class="user-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="nav-username">User</span></div>
+      <button class="btn-logout"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Logout</button>
+    </div>
+  </nav>
+
+  <div class="profile-body">
+    <div class="profile-split">
+      <!-- Left: Profile Setup -->
+      <div class="profile-card">
+        <h3>My Profile</h3>
+        <div class="avatar-upload">
+          <div class="avatar-circle">JD</div>
+          <button class="btn-sm">Change Photo</button>
+        </div>
+        <div class="form-group"><label>Display Name</label><input type="text" value="Juan Dela Cruz"/></div>
+        <div class="form-group"><label>University</label>
+          <select><option>University of Mindanao (UM)</option><option>AdDU</option><option>UP Mindanao</option></select>
+        </div>
+        <div class="form-group"><label>Course / Program</label><input type="text" placeholder="e.g. BS Computer Science"/></div>
+        <div class="form-group"><label>Bio</label><textarea placeholder="Tell others about yourself..."></textarea></div>
+
+        <div class="skills-section">
+          <h4>What I Can Teach</h4>
+          <div class="skills-tags" id="teach-tags">
+            <span class="tag green">Python <button type="button" class="tag-remove" data-tag-container="teach-tags">×</button></span>
+            <span class="tag green">Web Dev <button type="button" class="tag-remove" data-tag-container="teach-tags">×</button></span>
+          </div>
+          <div class="tag-add">
+            <input type="text" id="teach-input" placeholder="Add a skill..." />
+            <button id="btn-add-teach" type="button" class="btn-sm">+ Add</button>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h4>What I Want to Learn</h4>
+          <div class="skills-tags" id="learn-tags">
+            <span class="tag blue">Accounting <button type="button" class="tag-remove" data-tag-container="learn-tags">×</button></span>
+          </div>
+          <div class="tag-add">
+            <input type="text" id="learn-input" placeholder="Add a skill..." />
+            <button id="btn-add-learn" type="button" class="btn-sm">+ Add</button>
+          </div>
+        </div>
+
+        <button id="btn-save-profile" type="button" class="btn-primary">Save Profile & Find Matches →</button>
+      </div>
+
+      <!-- Right: Matches -->
+      <div class="matches-panel">
+        <div class="matches-header">
+          <h3>Your Matches</h3>
+          <span class="match-badge">4 new</span>
+        </div>
+        <p class="matches-sub">Students who can teach what you want to learn, and want to learn what you can teach.</p>
+        <div id="match-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE: WEBINARS
+════════════════════════════════════════════════════════ -->
+<div id="page-webinar" class="page">
+  <nav class="main-nav">
+    <div class="logo"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M4 22 L16 10 L28 22" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="22" width="16" height="4" rx="2" fill="#2563EB" opacity="0.3"/><circle cx="16" cy="10" r="3" fill="#2563EB"/></svg><span>DabaShare</span></div>
+    <div class="nav-links">
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Courses</a>
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>Profile & Match</a>
+      <a href="#" class="nav-link active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>Webinars</a>
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Messages</a>
+    </div>
+    <div class="nav-right">
+      <div class="user-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="nav-username">User</span></div>
+      <button class="btn-logout"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Logout</button>
+    </div>
+  </nav>
+
+  <div class="webinar-body">
+    <div class="webinar-top">
+      <div>
+        <h2>Webinars &amp; Study Groups</h2>
+        <p>Host or join live sessions with students across Davao</p>
+      </div>
+      <button id="btn-open-webinar" type="button" class="btn-primary">+ Host a Webinar</button>
+    </div>
+
+    <div class="webinar-tabs">
+      <button id="tab-upcoming" class="wtab active" type="button" data-tab="upcoming">Upcoming</button>
+      <button id="tab-live" class="wtab" type="button" data-tab="live">🔴 Live Now</button>
+      <button id="tab-my" class="wtab" type="button" data-tab="my">My Sessions</button>
+    </div>
+
+    <div id="webinar-list" class="webinar-grid"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE: MESSAGES
+════════════════════════════════════════════════════════ -->
+<div id="page-messages" class="page">
+  <nav class="main-nav">
+    <div class="logo"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M4 22 L16 10 L28 22" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="22" width="16" height="4" rx="2" fill="#2563EB" opacity="0.3"/><circle cx="16" cy="10" r="3" fill="#2563EB"/></svg><span>DabaShare</span></div>
+    <div class="nav-links">
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Courses</a>
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>Profile & Match</a>
+      <a href="#" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>Webinars</a>
+      <a href="#" class="nav-link active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Messages</a>
+    </div>
+    <div class="nav-right">
+      <div class="user-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="nav-username">User</span></div>
+      <button class="btn-logout"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Logout</button>
+    </div>
+  </nav>
+
+  <div class="messages-body">
+    <div class="conversations-panel">
+      <div class="conv-header">
+        <h3>Messages</h3>
+        <span class="unread-badge">3</span>
+      </div>
+      <input type="text" class="conv-search" placeholder="Search conversations..."/>
+      <div id="conv-list"></div>
+    </div>
+    <div class="chat-panel">
+      <div class="chat-header" id="chat-header">
+        <div class="chat-avatar">M</div>
+        <div>
+          <strong id="chat-name">Maria Santos</strong>
+          <span class="online-dot">● Online</span>
+        </div>
+      </div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input-row">
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button id="btn-send-message" type="button" class="btn-send">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     MODAL: Post Course
+════════════════════════════════════════════════════════ -->
+<div id="modal-post" class="modal-overlay hidden" data-modal-close="modal-post">
+  <div class="modal-box">
+    <div class="modal-header"><h3>Post a New Course</h3><button type="button" data-modal-close="modal-post">×</button></div>
+    <div class="form-group"><label>Course Title</label><input id="new-course-title" type="text" placeholder="e.g. Introduction to Python"/></div>
+    <div class="form-row">
+      <div class="form-group"><label>Level</label><select id="new-course-level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option><option>Expert</option></select></div>
+      <div class="form-group"><label>Price</label><select id="price-type"><option value="free">Free</option><option value="paid">Paid (₱)</option></select></div>
+    </div>
+    <div class="form-group hidden" id="price-amount-group"><label>Amount (₱)</label><input id="price-amount" type="number" placeholder="e.g. 257"/></div>
+    <div class="form-group"><label>Description</label><textarea id="new-course-desc" placeholder="Describe what students will learn..."></textarea></div>
+    <div class="form-group"><label>University</label><select id="new-course-uni"><option>UM</option><option>AdDU</option><option>UP Mindanao</option><option>Holy Cross</option></select></div>
+    <button id="btn-submit-course" type="button" class="btn-primary">Post Course →</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     MODAL: Host Webinar
+════════════════════════════════════════════════════════ -->
+<div id="modal-webinar" class="modal-overlay hidden" data-modal-close="modal-webinar">
+  <div class="modal-box">
+    <div class="modal-header"><h3>Host a Webinar / Study Group</h3><button type="button" data-modal-close="modal-webinar">×</button></div>
+    <div class="form-group"><label>Session Title</label><input type="text" placeholder="e.g. Calculus Study Group — Finals Prep"/></div>
+    <div class="form-row">
+      <div class="form-group"><label>Type</label><select><option>Webinar</option><option>Study Group</option><option>Q&amp;A Session</option></select></div>
+      <div class="form-group"><label>Max Participants</label><input type="number" placeholder="20" value="20"/></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Date</label><input type="date"/></div>
+      <div class="form-group"><label>Time</label><input type="time"/></div>
+    </div>
+    <div class="form-group"><label>Description</label><textarea placeholder="What will you cover?"></textarea></div>
+    <button id="btn-submit-webinar" type="button" class="btn-primary">Schedule Session →</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast hidden"></div>
+
+<script type="module" src="App.js"></script>
+</body>
+</html>
